@@ -93,7 +93,7 @@ exports.login = (req, res) => {
             role: user.role   // 👈 important
         },
         process.env.JWT_SECRET,
-        { expiresIn: '1h' }
+        { expiresIn: '8h' }
     );
 
     res.json({ token });

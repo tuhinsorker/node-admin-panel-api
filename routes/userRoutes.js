@@ -21,7 +21,6 @@ router.post(
 );
 
 router.post("/login", userController.login);
-
 router.get("/profile", auth, (req, res) => {
   res.json(req.user);
 });
